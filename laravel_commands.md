@@ -3,6 +3,7 @@
 ## Artisan Commands
 
 ### Project Setup
+
 ```bash
 # Create a new Laravel project
 laravel new project-name
@@ -30,6 +31,7 @@ php artisan optimize:clear
 ```
 
 ### Database Commands
+
 ```bash
 # Run migrations
 php artisan migrate
@@ -60,6 +62,7 @@ php artisan make:seeder UserSeeder
 ```
 
 ### Model Commands
+
 ```bash
 # Create a model
 php artisan make:model ModelName
@@ -78,6 +81,7 @@ php artisan make:model ModelName -a
 ```
 
 ### Controller Commands
+
 ```bash
 # Create a controller
 php artisan make:controller UserController
@@ -93,12 +97,14 @@ php artisan make:controller UserController --model=User
 ```
 
 ### Middleware Commands
+
 ```bash
 # Create a middleware
 php artisan make:middleware CheckAge
 ```
 
 ### Policy Commands
+
 ```bash
 # Create a policy
 php artisan make:policy PostPolicy
@@ -108,12 +114,14 @@ php artisan make:policy PostPolicy --model=Post
 ```
 
 ### Request Commands
+
 ```bash
 # Create a form request
 php artisan make:request StorePostRequest
 ```
 
 ### Resource Commands
+
 ```bash
 # Create a resource
 php artisan make:resource UserResource
@@ -123,6 +131,7 @@ php artisan make:resource Users --collection
 ```
 
 ### Event Commands
+
 ```bash
 # Create an event
 php artisan make:event UserRegistered
@@ -132,6 +141,7 @@ php artisan make:listener SendWelcomeEmail --event=UserRegistered
 ```
 
 ### Job Commands
+
 ```bash
 # Create a job
 php artisan make:job ProcessPodcast
@@ -141,6 +151,7 @@ php artisan make:job ProcessPodcast --queued
 ```
 
 ### Mail Commands
+
 ```bash
 # Create a mailable
 php artisan make:mail OrderShipped
@@ -150,6 +161,7 @@ php artisan make:mail OrderShipped --markdown=emails.orders.shipped
 ```
 
 ### Notification Commands
+
 ```bash
 # Create a notification
 php artisan make:notification InvoicePaid
@@ -159,12 +171,14 @@ php artisan make:notification InvoicePaid --markdown=notifications.invoice
 ```
 
 ### Provider Commands
+
 ```bash
 # Create a service provider
 php artisan make:provider RiakServiceProvider
 ```
 
 ### Testing Commands
+
 ```bash
 # Create a test
 php artisan make:test UserTest
@@ -180,6 +194,7 @@ php artisan test --filter=UserTest
 ```
 
 ### Queue Commands
+
 ```bash
 # Run the queue worker
 php artisan queue:work
@@ -195,18 +210,21 @@ php artisan queue:restart
 ```
 
 ### Tinker Commands
+
 ```bash
 # Start Tinker (REPL)
 php artisan tinker
 ```
 
 ### Storage Commands
+
 ```bash
 # Create a symbolic link from public/storage to storage/app/public
 php artisan storage:link
 ```
 
 ### Vendor Commands
+
 ```bash
 # Publish vendor files/resources
 php artisan vendor:publish
@@ -322,4 +340,3 @@ composer install --no-dev --optimize-autoloader
 
 # Build assets for production
 npm run build
-```

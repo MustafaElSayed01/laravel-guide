@@ -1,37 +1,5 @@
 # Laravel Troubleshooting Guide
 
-## Common Installation Issues
-
-### Composer Memory Limit
-
-**Issue**: Composer runs out of memory during installation or update.
-
-**Solution**:
-```bash
-PHP_MEMORY_LIMIT=-1 composer require package-name
-```
-
-### Missing PHP Extensions
-
-**Issue**: Laravel requires certain PHP extensions that might be missing.
-
-**Solution**: Install the required extensions. For example, on Ubuntu:
-```bash
-sudo apt-get install php-mbstring php-xml php-bcmath php-curl
-```
-
-On Windows with XAMPP, enable the extensions in the php.ini file.
-
-### Permission Issues
-
-**Issue**: Permission denied errors when Laravel tries to write to storage or bootstrap/cache directories.
-
-**Solution**: Set proper permissions:
-```bash
-chmod -R 775 storage bootstrap/cache
-chown -R $USER:www-data storage bootstrap/cache
-```
-
 ## Database Connection Issues
 
 ### Connection Refused
