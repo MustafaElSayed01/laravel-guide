@@ -289,6 +289,25 @@ npm run build
 npm run hot
 ```
 
+## PNPM Commands
+
+```bash
+# Install pnpm
+npm install -g pnpm@latest
+
+# Install dependencies
+pnpm install || pnpm i
+
+# Update dependencies
+pnpm update
+
+# Install a package
+pnpm add package-name
+
+# Install a development package
+pnpm add package-name --save-dev
+```
+
 ## Git Commands
 
 ```bash
